@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Image Gallery</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="visualdesign3.css" rel="stylesheet" type="text/css">
+    <style>
+        header h1 {
+            color: darkred;
+            border: solid darkred;
+            text-align: center;
+        }
+
+        nav ul a {
+            text-decoration: none;
+            color: white;
+            background-color: darkred;
+            padding: 5px 10px;
+        }
+
+        nav ul a:hover {
+            background-color: lightpink;
+        }
+
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin: 20px 0;
+        }
+
+        .image-container {
+            flex: 0 0 30%; /* Each container takes up about 30% of the gallery width */
+            margin: 10px;
+            border: 1px solid #ccc;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+
+        .image-container img {
+            max-width: 100%;
+            max-height: 300px;
+            width: auto;
+            height: auto;
+        }
+
+        .description {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Visual Design</h1>
+    </header>
+
+ 
+
+    <section class="gallery">
+        <div class="image-container">
+            <img src="artifacts/3.png" alt="Image 6">
+            <p class="description">Collage</p>
+        </div>
+        <div class="image-container">
+            <img src="artifacts/6.png" alt="Image 7">
+            <p class="description">Collage</p>
+        </div>
+        <div class="image-container">
+            <img src="artifacts/krik krak.png" alt="Image 2">
+            <p class="description">Book Cover Redesign</p>
+        </div>
+        <div class="image-container">
+            <img src="artifacts/butterfly pin.png" alt="Image 3">
+            <p class="description">Use an everyday object in drawing</p>
+        </div>
+        <div class="image-container">
+            <img src="artifacts/Earthquake in Syria & Turkey.png" alt="Image 5">
+            <p class="description">Infographic</p>
+        </div>
+        <div class="image-container">
+            <img src="artifacts/album redesign.png" alt="Image 1">
+            <p class="description">Album Redesign</p>
+        </div>
+    </section>
+</body>
+</html>
+
+
