@@ -9,8 +9,8 @@ body {
     width: 80%;
     margin: auto;
     overflow: hidden;
-    background-color: #fff; /* White background for the form */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    background-color: #fff; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
     padding: 20px;
 }
 
