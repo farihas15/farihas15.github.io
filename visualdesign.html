@@ -1,67 +1,106 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
 <head>
-<meta charset="UTF-8">
-<title> Visual Design </title>
-<style type="text/css">
-h1 {
-   \
-}
-	
+    <title>Image Gallery</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="visualdesign3.css" rel="stylesheet" type="text/css">
+    <style>
 
-h2 {
-    border: 2px outset #BB005E;
-    width: 150px;
-    text-shadow: 0px 0px 44px;
-}
-</style>
-<link href="style.css" rel="stylesheet" type="text/css">
+       header {
+    background-color: darkred;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    width: 100%; 
+    box-sizing: border-box; 
+      
+         }
+
+        nav ul a {
+            text-decoration: none;
+            color: white;
+            background-color: darkred;
+            padding: 5px 10px;
+        }
+
+        nav ul a:hover {
+            background-color: lightpink;
+        }
+
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin: 20px 0;
+        }
+
+        .image-container {
+            flex: 0 0 30%; /* Each container takes up about 30% of the gallery width */
+            margin: 10px;
+            border: 1px solid #ccc;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+
+        .image-container img {
+            max-width: 100%;
+            max-height: 300px;
+            width: auto;
+            height: auto;
+        }
+
+        .description {
+            text-align: center;
+        }
+    </style>
 </head>
-
 <body>
-	<body style="background-color:lightpink;">
-	
-		
-<h1> Visual Designs </h1>
-	<center> <a href="index.html"> <FONT COLOR=purple> Homepage</a> 
-	<a href="aboutme.html"> <FONT COLOR=purple> About Me</a>
-	<a href="visualdesign.html"> <FONT COLOR=purple> Visual Designs</a>
-	<a href="digitaldesign.html"> <FONT COLOR=purple> Digital Design</a> 
-	<a href="WCPPage/wcp.html"> <FONT COLOR=purple> Web Client Program</a> </center>
-<center>
-	<h2> <FONT COLOR= palevioletred> Queer Eye </h2>
-	<h4>  <FONT COLOR= purple> Illustrate anything to your liking </h4>
-	<h6> <FONT COLOR= purple> I used tape to create pizza-like shapes arranged in a circle and added an eye in the middle. Initially I was going for an "eye of the storm" look but painted in a spectrum of colors instead. </h6>
+    <header>
+        <h1>Visual Design</h1>
+    </header>
 
-<img src="artifacts/queer eye.png" width="387" height="379" alt=""/>
-	<P> </P>
-	<h2>  <FONT COLOR= palevioletred>Colored Mandala </h2>
-<h4>  <FONT COLOR= purple> Illustrate a mandala through digital means </h4>
- 	<h6> <FONT COLOR= purple> I used Adobe Photoshop to experiment with the shapes and colors </h6>
+ 		<nav>
+		<center>
+        <ul>
+			        <a href='../index1.html'>  </b> <strong>Main Menu  </strong></a></li>
+					<a href='../aboutme/abmeee.html'><strong> About </strong></a></li>
+					<a href='../portfolio1.html'> <strong>Portfolio </strong></a></li>
+		<br> 
+		<br>
+		<a href="../visualdesign/visualdesign.html"> Visual Design </a>
+		<a href="../digitaldesign1.html">Digital Design</a>
+		<a href="../wcp.html">WCP</a>
+		</nav> 
+			<br> 
+		<br>
 
-<img src="artifacts/mandala.png" width="387" height="379" alt=""/>
-<P> </P>
-	<h2>  <FONT COLOR= palevioletred> Redesign Album Cover </h2>
-<h4> <FONT COLOR= purple> Choose an artist's album to redesign </h4>
-	<h6> <FONT COLOR= purple> I chose Kali Uchis' Isolation album and centralized the color palette to ligher colors as her aura matches the dream-like essence. I also contrasted it with darker color as the word "isolation" has a solemn connotation. </h6>
-
-<img src="album redesign.png" width="413" height="744" alt=""/>
-	<P> </P>
-	<h2>  <FONT COLOR= palevioletred>  Out of Touch </h2>
-<h4> <FONT COLOR= purple> Draw a body part using a medium of choice </h4>
-	<h6> <FONT COLOR= purple> I was listening to "Out of Touch" by Hall and Oates and as we were still in quarantine at the time, I thought about drawing out hands in close contact but not meeting by using oil pastel for a smudged look.   </h6>
-<img src="hands.png" width="410" height="376" alt=""/>
-		<P> </P>
-<h2>  <FONT COLOR= palevioletred>  Butterfly </h2>
-<h4> <FONT COLOR= purple> Use everyday objects to set up dioramas or scenes to photograph </h4>
-	<h6> <FONT COLOR= purple> I used a bobby pin as it is a frequently used object to make out a butterfly </h6>
-
-<img src="butterfly pin.png" width="338" height="380" alt=""/>
-	<h2> <FONT COLOR= palevioletred> Burger Ballet </h2>
-<h4> <FONT COLOR= purple> Doodle Art </h4>
-	<h6> <FONT COLOR= purple> I was watching Black Swan (2010) while eating a burger so I drew something midly absurd </h6>
-
-<img src="ballet burgers.png" width="517" height="382" alt=""/>
-		</center>
+    <section class="gallery">
+        <div class="image-container">
+            <img src="artifacts/3.png" alt="Image 6">
+            <p class="description">Collage</p>
+        </div>
+        <div class="image-container">
+            <img src="artifacts/6.png" alt="Image 7">
+            <p class="description">Collage</p>
+        </div>
+        <div class="image-container">
+            <img src="artifacts/krik krak.png" alt="Image 2">
+            <p class="description">Book Cover Redesign</p>
+        </div>
+        <div class="image-container">
+            <img src="artifacts/butterfly pin.png" alt="Image 3">
+            <p class="description">Use an everyday object in drawing</p>
+        </div>
+        <div class="image-container">
+            <img src="artifacts/Earthquake in Syria & Turkey.png" alt="Image 5">
+            <p class="description">Infographic</p>
+        </div>
+        <div class="image-container">
+            <img src="artifacts/album redesign.png" alt="Image 1">
+            <p class="description">Album Redesign</p>
+        </div>
+    </section>
 </body>
 </html>
+
+
