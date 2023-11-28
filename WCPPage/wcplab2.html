@@ -2,9 +2,24 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title></title>
+<title>WCP Lab 2</title>
 	<style> 
+	body
+		{
+			
+		}
 	 
+		    
+	    nav ul  a {
+            text-decoration: none;
+            color: white;
+            background-color: darkblue;
+            padding: 5px 10px;
+        }
+
+        nav ul a:hover {
+            background-color: lightblue;
+        }
 nav {
     background-color: #C3E1FF; 
     padding: 20px 0; 
@@ -34,6 +49,54 @@ nav ul li a {
 nav ul li a:hover {
     background-color: lightsteelblue;
 }
+		 h1 {
+            color: darkblue;
+            text-shadow: 4px 4px 4px lightblue; */
+        }
+		
+		.mainmenu:hover {
+    background-color: lightsteelblue; 
+}
+
+.mainmenu:active {
+    color: lightblue; 
+}
+		.visual-design:hover {
+      font-size: 222%; 
+  }
+
+  .visual-design:active {
+      font-size: 70%; /
+  }
+		.wcp:hover {
+    border: inset; 
+}
+
+.wcp:active {
+    border: double;
+}
+		.about-me:hover {
+      box-shadow: 8px 0 5px black;
+  }
+
+  .about-me:active {
+      box-shadow: 0 8px 5px darkblue; 
+  }
+	.digital-design:hover {
+        border: double;
+		border-color: beige;
+		transition: 0.1s;
+		transform: skewX(20deg);
+	    transition: transform 0.3s ease-in-out; 
+
+ 
+  }
+
+  .digital-design:active {
+      background-color: whitesmoke;
+      color: palevioletred;
+      transition: background-color 0.3s;
+  }
 
     </style>
 </head>
@@ -41,7 +104,18 @@ nav ul li a:hover {
 <body>
     <nav>
         <ul>
-			<li><a href="wcp.html"> WCP Main Page</a></li>
+		<a href='../index1.html' class="mainmenu"> <strong>Main Menu  </strong></a></li>
+		<a href='../aboutme/abmeee.html' class="about-me"> <strong> About </strong></a></li>
+	    <a href='../portfolio1.html'> <strong>Portfolio </strong></a></li>
+		<br> 
+		<br>
+		<a href="../visualdesign/visualdesign.html" class="visual-design"> Visual Design</a>
+		<a href="../digitaldesign1.html" class="digital-design"> Digital Design</a>
+<br> 
+<br> 
+<br> 
+
+			<li><a href="wcp.html" class="wcp" > WCP Main Page</a></li>
             <li><a href="WCPLab1.html">WCP Lab 1</a></li>
             <li><a href="wcplab2.html">WCP Lab 2</a></li>
             <li><a href="wcplab3.html">WCP Lab 3</a></li>
@@ -51,8 +125,9 @@ nav ul li a:hover {
 
         </ul>
     </nav>
-    <section>
-        <!-- Your section content goes here -->
-    </section>
+<center>
+   <h1> Hover and Click over the navigation bars</h1>
+</center>
 </body>
+	
 </html>
