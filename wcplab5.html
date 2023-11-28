@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Blog Sign-Up Form </title>
+    <link rel="stylesheet" href="style.css">
+    <link href="foodblog.css" rel="stylesheet" type="text/css">
+	<style>
+	nav {
+    background-color: indianred; 
+    padding: 20px 0; 
+    text-align: center;
+}
+
+nav ul {
+    padding: 0;
+    list-style-type: none;
+    margin: 0; 
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    background-color: darkred;
+    padding: 10px 15px; 
+    border-radius: 5px; 
+    transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: pink;
+}
+
+	
+	</style>
+</head>
+		<body>
+    <nav>
+        <ul>
+			<li><a href="wcp.html"> WCP Main Page</a></li>
+            <li><a href="WCPLab1.html">WCP Lab 1</a></li>
+            <li><a href="wcplab2.html">WCP Lab 2</a></li>
+            <li><a href="wcplab3.html">WCP Lab 3</a></li>
+            <li><a href="wcplab4.html">WCP Lab 4</a></li>
+            <li><a href="wcplab5.html">WCP Lab 5</a></li>
+		    <br>
+
+        </ul>
+    </nav>
+<body>
+    <div class="container">
+        <header>
+          <center> <h1>Sign Up Now </h1> 
+			<h3>   RECEIVE DAILY UPDATES FROM OUR NEWSLETTER </h3> 
+        </header>
+
+        <form id="signupForm">
+            <div class="form-group">
+                <label for="firstName">First Name:</label>
+                <input type="text" id="firstName" name="firstName" required>
+            </div>
+
+            <div class="form-group">
+                <label for="lastName">Last Name:</label>
+                <input type="text" id="lastName" name="lastName" required>
+            </div>
+
+            <div class="form-group">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" pattern="[A-Za-z]{6,10}" placeholder="Enter 6-10 letters" title="6 to 10 letters only" required>
+            </div>
+
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" pattern="[0-9A-Za-z]{6,10}" placeholder="6-10 characters" title="6 to 10 letters or numbers only" required>
+            </div>
+
+            <div class="form-group">
+                <label for="dob">Date of Birth:</label>
+                <input type="date" id="dob" name="dob" required>
+            </div>
+
+            <div class="form-group">
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="website">Personal Website:</label>
+                <input type="url" id="website" name="website">
+            </div>
+
+            <fieldset class="form-group">
+                <legend>Interests:</legend>
+                <input type="checkbox" id="recipes" name="interests" value="recipes">
+                <label for="recipes">Recipes</label><br>
+                <input type="checkbox" id="reviews" name="interests" value="reviews">
+                <label for="reviews">Restaurant Reviews</label><br>
+                <input type="checkbox" id="cooking" name="interests" value="cooking">
+                <label for="cooking">Cooking Tips</label><br>
+                <input type="checkbox" id="photography" name="interests" value="photography">
+                <label for="photography">Food Photography</label>
+            </fieldset>
+
+            <div class="form-group">
+                <label for="source">Where did you hear about us?</label>
+                <div class="radio-group">
+                    <input type="radio" id="socialMedia" name="source" value="socialMedia">
+                    <label for="socialMedia">Social Media</label><br>
+                    <input type="radio" id="friendsFamily" name="source" value="friendsFamily">
+                    <label for="friendsFamily">Friends/Family</label><br>
+                    <input type="radio" id="advertisement" name="source" value="advertisement">
+                    <label for="advertisement">Online Advertisement</label><br>
+                    <input type="radio" id="foodEvents" name="source" value="foodEvents">
+                    <label for="foodEvents">Food Events</label>
+                </div>
+            </div>
+
+            <div class="button-group">
+                <button type="submit">Submit</button>
+                <button type="reset">Reset</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

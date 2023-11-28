@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+
+       
+
+        section {
+            margin: 20px 0;
+        }
+* {
+  box-sizing: border-box;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+[class*="col-"] {
+  float: left;
+  padding: 15px;
+}
+
+html {
+  font-family: "Lucida Sans", sans-serif;
+}
+
+.header {
+  background-color: #EBF5FB;
+  color: #62A199;
+  padding: 10px;
+}
+
+.menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li {
+  padding: 8px;
+  margin-bottom: 7px;
+  background-color: lightblue;
+  color: #ffffff;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.menu li:hover {
+  background-color: #0099cc;
+}
+
+.aside {
+  background-color: lightblue;
+  padding: 15px;
+  color: #ffffff;
+  text-align: center;
+  font-size: 14px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.footer {
+  background-color: #0099cc;
+  color: #ffffff;
+  text-align: center;
+  font-size: 12px;
+  padding: 15px;
+}
+
+/* For desktop: */
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  [class*="col-"] {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width:1000px){
+h1 {
+    font-size: 60px;
+}
+}
+
+@media screen{
+h1 {
+    background-color: #EBF5FB;
+	color:#95C1C7
+		
+}
+
+
+    </style>
+</head>
+<body>
+	
+	<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>HTML Tables</title>
+	<style>
+  th, td {
+    text-align: center;
+  }
+
+  th {
+    color: darkblue;
+  }
+		th{
+	background-color:pink;
+}
+		table {
+    border-color: pink;
+  }
+
+
+
+  td {
+    color: darkred;
+  }
+
+        body {
+            margin: 40px;
+            background-color: ;
+            color: #333;
+        }
+
+        header {
+            background-color: pink;
+            color: black;
+            text-align: center;
+            padding: 10px 2px;
+		}
+
+	 
+nav {
+    background-color: lightblue; 
+    padding: 20px 0; 
+    text-align: center;
+}
+
+nav ul {
+    padding: 0;
+    list-style-type: none;
+    margin: 0; 
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    background-color: #8FB4BF;
+    padding: 10px 15px; 
+    border-radius: 5px; 
+    transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: lightsteelblue;
+}
+
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+			<li><a href="wcp.html"> WCP Main Page</a></li>
+            <li><a href="WCPLab1.html">WCP Lab 1</a></li>
+            <li><a href="wcplab2.html">WCP Lab 2</a></li>
+            <li><a href="wcplab3.html">WCP Lab 3</a></li>
+            <li><a href="wcplab4.html">WCP Lab 4</a></li>
+            <li><a href="wcplab5.html">WCP Lab 5</a></li>
+		    <br>
+
+        </ul>
+    </nav>
+    <section>
+    </section>
+</body>
+</html>
+
+  
+      
+
+<div class="header">
+			<center>
+	
+  <center><h1><strong>Chania</strong></h1>
+  </center>
+</div>
+
+<div class="row">
+  <div class="col-3 menu">
+    <ul>
+    <li>The Flight</li>
+    <li>The City</li>
+    <li>The Island</li>
+    <li>The Food</li>
+    </ul>
+  </div>
+
+  <div class="col-6">
+    <h1> <center>
+      <strong>The City</strong>
+    </center></h1>
+	  <center>
+    <p>Chania is the capital of the Chania region on the island of Crete. The city can be divided in two parts, the old town and the modern city.</p> </center>
+  </div>
+
+  <div class="col-3 right">
+    <div class="aside">
+      <h2>What?</h2>
+      <p>Chania is a city on the island of Crete.</p>
+      <h2>Where?</h2>
+      <p>Crete is a Greek island in the Mediterranean Sea.</p>
+      <h2>How?</h2>
+      <p>You can reach Chania airport from all over Europe.</p>
+    </div>
+  </div>
+</div>
+
+<div class="footer">
+  <p>Resize the browser window to see how the content respond to the resizing.</p>
+</div>
+
+</body>
+</html>
+
+
